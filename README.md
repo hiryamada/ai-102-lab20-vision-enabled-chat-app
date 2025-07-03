@@ -2,7 +2,7 @@
 
 ## 概要
 
-- サンプルの画像ファイル [mystery-fruit.jpeg](mystery-fruit.jpeg) を生成AIモデルに送信し、画像を踏まえた質問を行う。
+- サンプルの画像ファイル [mystery-fruit.jpeg](mystery-fruit.jpeg) を生成AIモデルに送信し、画像を伴う質問を行う。
   - なおこの画像は [ドラゴンフルーツ](https://ja.wikipedia.org/wiki/%E3%83%89%E3%83%A9%E3%82%B4%E3%83%B3%E3%83%95%E3%83%AB%E3%83%BC%E3%83%84) の写真。
 - 生成AIとして マイクロソフトの`Phi-4-multimodal-instruct`を使用。このモデルはマルチモーダルモデルでありテキストだけではなく画像などのデータを入力することができる
 - Chat Completion APIに、テキストに加えて画像も送る。
@@ -30,16 +30,17 @@
 以下のような応答が得られる（応答は毎回変わる）
 
 ```
-A customer called to add 5 pounds of avocados to their order for the next month, speaking from a Fourth coffee shop on Madison Avenue.
+This is an image of a dragon fruit.
+The fruit has a vibrant pink interior with black and white seeds, and it also has green patches with green tendrils extending from the skin.
+The skin is rough and has a glossy appearance.
 ```
 
 参考訳
 ```
-マディソン街の「フォースコーヒー」ショップのパーカーが、来月の注文に 5 ポンドのアボカドを追加したいと電話をかけてきました。
+これはドラゴンフルーツの画像です。
+果実は鮮やかなピンク色で、黒と白の種子が入っています。また、皮からは緑色の巻きひげが伸び、緑色の斑点も見られます。
+皮はざらざらしていて、光沢のある外観です。
 ```
-
-備考: 「Fourth Coffee」は、マイクロソフトがよく使用する架空の会社名。
-
 
 ## 参考
 
